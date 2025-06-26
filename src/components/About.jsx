@@ -37,15 +37,15 @@ const About = () => {
           </div>
         </div>
 
-        <div className="p-4 items-center space-y-2">
-          <h2 className="text-5xl font-bold mt-4 lg:mt-20">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        <div className="p-4 items-center space-y-4">
+          <h2 className="text-5xl font-bold mt-4 lg:mt-24 text-[#64BCAE]">
+            The Dental <br /> Center National <br /> Hospital
           </h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-            libero tenetur similique velit mollitia vel minus alias! Nihil esse
-            repellat placeat aliquid asperiores laborum aliquam voluptatem id,
-            saepe, reiciendis aperiam.
+          <p className="pt-8 font-serif">
+            One of the most important factors about people’s lives is the
+            information of, the use of, and the growing knowledge of medicine.
+            Medicine is a form of art. It depends on how skillfully doctors
+            apply their knowledge when dealing with patients
           </p>
         </div>
       </div>

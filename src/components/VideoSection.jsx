@@ -15,9 +15,11 @@ const VideoSection = () => {
 
       <div className="absolute bottom-[300px] w-full flex justify-center items-center text-white px-10 z-10 text-center">
         <h3 className="text-2xl md:text-5xl font-extrabold ">
-          Turning ideas into interactive,
-          <br /> scalable, and modern web
-          <br /> experiences using the MERN stack.
+          Providing trusted, holistic,
+          <br /> & <br />
+          evidence-based medical solutions for
+          <br />
+          every stage of life
         </h3>
       </div>
     </div>

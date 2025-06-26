@@ -1,33 +1,36 @@
 import { Link } from "react-router-dom";
+import root from "../assets/RootCanal.webp";
+import visit from "../assets/Visit.webp";
+import smile from "../assets/Smile.webp";
 
 const blogs = [
   {
     id: 1,
     title: "5 Dental Care Tips for a Healthier Smile",
     date: "June 22, 2025",
-    image: "https://source.unsplash.com/featured/?dental-care",
+    image: smile,
   },
   {
     id: 2,
     title: "Understanding Root Canal Treatment",
     date: "June 15, 2025",
-    image: "https://source.unsplash.com/featured/?dentist-office",
+    image: root,
   },
   {
     id: 3,
     title: "How Often Should You Visit a Dentist?",
     date: "June 8, 2025",
-    image: "https://source.unsplash.com/featured/?teeth-cleaning",
+    image: visit,
   },
 ];
 
 const BlogSection = () => {
   return (
-    <section className="py-16 px-6 md:px-16 bg-gray-50">
-      <div className="w-10/12 mx-auto">
+    <section className="py-16  bg-gray-50">
+      <div className="w-10/12 mx-auto px-6 md:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            From The Doctor's Desk
+            From The <span className="text-[#64BCAE]">Doctor's</span> Desk
           </h2>
           <p className="text-gray-600">
             Stay informed with tips, advice, and the latest updates in dental
@@ -52,7 +55,7 @@ const BlogSection = () => {
                   {blog.title}
                 </h3>
                 <Link
-                  to={`/blog/${blog.id}`}
+                  to={`/blogs`}
                   className="inline-block text-blue-600 font-medium hover:underline"
                 >
                   Read More →

@@ -1,12 +1,50 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+dr-portfolio/
+│
+├── public/
+│ ├── assets/
+│ │ ├── images/ # Profile photo, clinic, treatment visuals, etc.
+│ │ └── favicon.ico
+│ └── index.html
+│
+├── src/
+│ ├── assets/
+│ │ ├── images/
+│ │ └── icons/ # SVG icons or icon packs
+│ │
+│ ├── components/
+│ │ ├── Header.jsx
+│ │ ├── Footer.jsx
+│ │ ├── AppointmentForm.jsx
+│ │ ├── TestimonialCard.jsx
+│ │ └── Shared/ # Reusable buttons, modals, etc.
+│ │
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ ├── About.jsx # Doctor bio, education, experience
+│ │ ├── Services.jsx # Treatments or specializations
+│ │ ├── Testimonials.jsx
+│ │ ├── Contact.jsx # Location, phone, form
+│ │ └── NotFound.jsx
+│ │
+│ ├── layout/
+│ │ └── MainLayout.jsx # Wraps pages with header/footer
+│ │
+│ ├── data/
+│ │ └── testimonials.js # Mock data (can connect to backend later)
+│ │
+│ ├── routes/
+│ │ └── AppRoutes.jsx # React Router routes
+│ │
+│ ├── styles/
+│ │ └── global.css # Tailwind config, custom CSS
+│ │
+│ ├── utils/
+│ │ └── helpers.js # Date formatter, email validator, etc.
+│ │
+│ ├── App.jsx
+│ └── main.jsx
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── tailwind.config.js (if using Tailwind)

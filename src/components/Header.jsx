@@ -1,41 +1,49 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { IoIosSearch } from "react-icons/io";
 import { CiMenuFries } from "react-icons/ci";
+import { Link, NavLink } from "react-router-dom";
+import { FaPhone } from "react-icons/fa";
 
 const Header = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
     <div className="bg-white">
-      <nav className="w-10/12 mx-auto flex items-center justify-between  relative bg-white rounded-full px-[10px] py-[8px] text-black">
-        <img
-          src="https://i.ibb.co/0BZfPq6/darklogo.png"
-          alt="logo"
-          className="w-[55px] "
-        />
+      <nav className="w-10/12 mx-auto flex items-center justify-between   bg-white rounded-full py-2 px-8 text-black fixed left-28 z-20">
+        <NavLink to={"/"}>
+          {" "}
+          <h3 className="font-bold text-xl text-pretty">Flossy</h3>
+        </NavLink>
         <ul className="items-center gap-[20px] text-[1rem] md:flex hidden">
-          <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-            home
-          </li>
+          <NavLink to={"/"}>
+            <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
+              home
+            </li>
+          </NavLink>
 
-          <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-            features
-          </li>
+          <NavLink to="/blogs">
+            <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
+              blogs
+            </li>
+          </NavLink>
 
-          <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-            blogs
-          </li>
-
-          <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-            shop
-          </li>
+          <NavLink to="/contact">
+            <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
+              contact
+            </li>
+          </NavLink>
         </ul>
 
         <div className="items-center gap-[10px] flex">
-          <button className="py-[7px] text-[1rem] px-[16px] rounded-full capitalize hover:text-[#3B9DF8] transition-all duration-300 sm:flex hidden">
-            Book An Appointment
-          </button>
+          <Link to="/contact">
+            <button className="bg-gray-200 min-w-fit dark:bg-slate-800 rounded-full py-1.5 px-4 flex items-center gap-2 hover:bg-[#e0e0e0] dark:hover:bg-slate-700 transition duration-300">
+              <FaPhone className="bg-[#64BCAE] text-white p-1.5 rounded-full text-xl" />
+              <span className="font-semibold text-gray-800 dark:text-white">
+                Book Appointment
+              </span>
+            </button>
+          </Link>
 
           <CiMenuFries
             className="text-[1.8rem] dark:text-[#abc2d3] mr-1 text-[#424242]c cursor-pointer md:hidden flex"

@@ -26,19 +26,20 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 bg-white px-6 md:px-16">
-      <div className="w-10/12 mx-auto">
+    <section className="py-16 bg-white ">
+      <div className="w-10/12 mx-auto px-6 md:px-8">
         <div className=" flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-              What Our <span className="text-blue-600">Happy</span> Patients Say
+              What Our <span className="text-[#64BCAE]">Happy</span> Patients
+              Say
             </h2>
             <p className="text-gray-600 max-w-xl">
               Hear from our satisfied patients about their experiences at Flossy
               and how our expert care has transformed their dental health.
             </p>
           </div>
-          <button className="mt-4 md:mt-0 flex items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-700 transition">
+          <button className="mt-4 md:mt-0 flex items-center gap-2 bg-[#64BCAE] text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-700 transition">
             <FaPhoneAlt className="text-sm" />
             Contact Us
           </button>
