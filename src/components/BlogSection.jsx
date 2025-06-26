@@ -42,7 +42,7 @@ const BlogSection = () => {
           {blogs.map((blog) => (
             <div
               key={blog.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition transform duration-300 hover:scale-105 ease-in-out"
             >
               <img
                 src={blog.image}
