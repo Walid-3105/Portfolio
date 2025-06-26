@@ -12,7 +12,7 @@ const Contact = () => {
       draggable: true,
       theme: "colored",
     });
-    e.target.reset(); // Optional: clears form
+    e.target.reset();
   };
   return (
     <div className="w-10/12 mx-auto min-h-screen pt-16">
