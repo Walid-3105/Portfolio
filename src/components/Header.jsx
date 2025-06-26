@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className="bg-white">
-      <nav className="w-10/12 mx-auto flex items-center justify-between  bg-white rounded-full py-2 px-8 md:pl-0 lg:px-8 text-black fixed left-10 lg:left-28 md:left-20 z-20">
+      <nav className="w-full lg:w-10/12 mx-auto flex items-center justify-between  bg-white rounded-full py-2 px-4 md:pl-0 lg:px-8 text-black fixed lg:left-28 md:left-20 z-20">
         <NavLink to={"/"}>
           <h3 className="font-bold text-xl text-pretty">Flossy</h3>
         </NavLink>

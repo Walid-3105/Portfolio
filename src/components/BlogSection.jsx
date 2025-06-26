@@ -27,7 +27,7 @@ const blogs = [
 const BlogSection = () => {
   return (
     <section className="py-16  bg-gray-50">
-      <div className="w-10/12 mx-auto px-6 md:px-8">
+      <div className="w-full lg:w-10/12 mx-auto px-6 md:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             From The <span className="text-[#64BCAE]">Doctor's</span> Desk

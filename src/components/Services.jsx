@@ -4,7 +4,7 @@ import service3 from "../assets/service3.webp";
 const Services = () => {
   return (
     <div className="bg-white">
-      <div className="w-10/12 mx-auto px-8 pt-8 pb-16 bg-blue-50 h-full lg:h-[550px]">
+      <div className="w-full lg:w-10/12 mx-auto px-8 pt-8 pb-16 bg-blue-50 h-full lg:h-[550px]">
         <h3 className="text-3xl lg:text-4xl font-bold text-center items-center ">
           Our <span className="text-[#64BCAE]">Dental</span> Service
         </h3>

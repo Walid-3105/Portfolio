@@ -27,16 +27,18 @@ const navLinks = [
 
 const Footer = () => {
   return (
-    <div className="px-20 md:px-44 lg:px-36  shadow-xl shadow-slate-100 border-t-2 bg-white">
-      <div className="pt-16 lg:pt-24 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-7 ">
+    <div className="px-8 md:px-44 lg:px-36  shadow-xl shadow-slate-100 border-t-2 bg-white">
+      <div className="pt-16 lg:pt-24 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-7 ">
         <div className="flex justify-start">
           <div>
-            <div className="text-sm font-medium mt-3">
-              <a className="text-xl flex text-center items-center font-bold">
+            <div className="text-sm font-medium mt-0 lg:mt-3">
+              <a className="text-xl flex text-left lg:text-center items-center font-bold">
                 Flossy Dental
               </a>
             </div>
-            @ {new Date().getFullYear()} Flossy Dental.dev
+            <p className="lg:block hidden">
+              @ {new Date().getFullYear()} Flossy Dental.dev
+            </p>
           </div>
         </div>
         <div>

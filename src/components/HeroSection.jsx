@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="bg-white">
       <div
-        className="w-10/12 mx-auto h-full rounded-md bg-white "
+        className="w-full lg:w-10/12 mx-auto h-full rounded-md bg-white "
         style={{
           backgroundImage: {},
           backgroundSize: "cover",

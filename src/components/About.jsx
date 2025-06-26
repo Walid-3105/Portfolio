@@ -5,7 +5,7 @@ import dentist4 from "../assets/dentist4.webp";
 const About = () => {
   return (
     <div className="bg-white">
-      <div className="w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 pt-14 p-8">
+      <div className="w-full lg:w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 pt-14 p-8">
         <div className="grid grid-cols-2 grid-rows-4 gap-4">
           <div className="row-span-2">
             <img
