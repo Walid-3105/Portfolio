@@ -38,7 +38,7 @@ const About = () => {
         </div>
 
         <div className="p-4 items-center space-y-4">
-          <h2 className="text-5xl font-bold mt-4 lg:mt-24 text-[#64BCAE]">
+          <h2 className="text-3xl lg:text-5xl font-bold mt-2 lg:mt-24 text-[#64BCAE]">
             The Dental <br /> Center National <br /> Hospital
           </h2>
           <p className="pt-8 font-serif">

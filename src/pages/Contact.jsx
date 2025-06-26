@@ -18,10 +18,10 @@ const Contact = () => {
     <div className="w-10/12 mx-auto min-h-screen pt-16">
       <div className="bg-gradient-to-br from-blue-50 to-white px-8 pt-8 pb-16">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold ">
+          <h2 className="text-3xl lg:text-4xl md:text-5xl font-bold ">
             Get in <span className="text-[#64BCAE]">Touch</span>
           </h2>
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-600 text-sm lg:text-lg max-w-2xl mx-auto">
             We’re here to help. Reach out to schedule appointments, ask
             questions, or learn more about our services.
           </p>

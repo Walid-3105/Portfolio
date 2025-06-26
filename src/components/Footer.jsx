@@ -27,7 +27,7 @@ const navLinks = [
 
 const Footer = () => {
   return (
-    <div className="px-5 md:px-44 lg:px-36  shadow-xl shadow-slate-100 border-t-2 bg-white">
+    <div className="px-20 md:px-44 lg:px-36  shadow-xl shadow-slate-100 border-t-2 bg-white">
       <div className="pt-16 lg:pt-24 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-7 ">
         <div className="flex justify-start">
           <div>

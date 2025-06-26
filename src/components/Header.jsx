@@ -10,9 +10,8 @@ const Header = () => {
 
   return (
     <div className="bg-white">
-      <nav className="w-10/12 mx-auto flex items-center justify-between   bg-white rounded-full py-2 px-8 text-black fixed left-28 z-20">
+      <nav className="w-10/12 mx-auto flex items-center justify-between  bg-white rounded-full py-2 px-8 md:pl-0 lg:px-8 text-black fixed left-10 lg:left-28 md:left-20 z-20">
         <NavLink to={"/"}>
-          {" "}
           <h3 className="font-bold text-xl text-pretty">Flossy</h3>
         </NavLink>
         <ul className="items-center gap-[20px] text-[1rem] md:flex hidden">
@@ -37,8 +36,8 @@ const Header = () => {
 
         <div className="items-center gap-[10px] flex">
           <Link to="/contact">
-            <button className="bg-gray-200 min-w-fit dark:bg-slate-800 rounded-full py-1.5 px-4 flex items-center gap-2 hover:bg-[#e0e0e0] dark:hover:bg-slate-700 transition duration-300">
-              <FaPhone className="bg-[#64BCAE] text-white p-1.5 rounded-full text-xl" />
+            <button className="bg-gray-200 min-w-fit dark:bg-slate-800 rounded-full py-1 lg:py-1.5 px-2 lg:px-4 flex items-center gap-2 hover:bg-[#e0e0e0] dark:hover:bg-slate-700 transition duration-300 ">
+              <FaPhone className="bg-[#64BCAE] text-white p-1.5 rounded-full text-lg lg:text-xl" />
               <span className="font-semibold text-gray-800 dark:text-white">
                 Book Appointment
               </span>
@@ -60,22 +59,24 @@ const Header = () => {
               />
               <IoIosSearch className="absolute dark:text-slate-400 top-[8px] left-3 text-gray-500 text-[1.3rem]" />
             </div>
-            <ul className="items-center gap-[20px] text-[1rem] text-gray-600 flex flex-col">
-              <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-                home
-              </li>
+            <ul className="items-center gap-[20px] text-[1rem] text-white flex flex-col">
+              <NavLink to={"/"}>
+                <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
+                  home
+                </li>
+              </NavLink>
 
-              <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-                features
-              </li>
+              <NavLink to="/blogs">
+                <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
+                  blogs
+                </li>
+              </NavLink>
 
-              <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-                blogs
-              </li>
-
-              <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-                shop
-              </li>
+              <NavLink to="/contact">
+                <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px]  hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
+                  contact
+                </li>
+              </NavLink>
             </ul>
           </aside>
         )}

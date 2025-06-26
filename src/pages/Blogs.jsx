@@ -31,10 +31,10 @@ const Blogs = () => {
     <div className="w-10/12 mx-auto pt-16">
       <div className="px-8 py-16 space-y-20  bg-blue-50">
         <div className="text-center mb-12 ">
-          <h1 className="text-4xl md:text-5xl font-bold">
+          <h1 className="text-3xl lg:text-4xl md:text-5xl font-bold">
             Doctor’s <span className="text-[#64BCAE]">Health</span> Blog
           </h1>
-          <p className="mt-4 text-gray-600 text-lg">
+          <p className="mt-4 text-gray-600 text-sm lg:text-lg">
             Explore expert health tips, latest treatments, and medical guides.
           </p>
         </div>

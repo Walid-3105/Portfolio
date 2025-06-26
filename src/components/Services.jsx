@@ -4,11 +4,11 @@ import service3 from "../assets/service3.webp";
 const Services = () => {
   return (
     <div className="bg-white">
-      <div className="w-10/12 mx-auto px-8 pt-8 pb-16 bg-blue-50 h-[550px]">
-        <h3 className="text-4xl font-bold text-center items-center ">
+      <div className="w-10/12 mx-auto px-8 pt-8 pb-16 bg-blue-50 h-full lg:h-[550px]">
+        <h3 className="text-3xl lg:text-4xl font-bold text-center items-center ">
           Our <span className="text-[#64BCAE]">Dental</span> Service
         </h3>
-        <p className="mt-1 text-center items-center text-gray-600 text-lg pb-8 w-2/3 mx-auto">
+        <p className="mt-1 text-center items-center text-gray-600 text-sm lg:text-lg pb-8 w-2/3 mx-auto">
           Comprehensive dental care for every smile. Explore our professional
           treatments designed for comfort and long-lasting results.
         </p>
